@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Assistente de leitura dinâmica</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+		
+	</head>
+
+	<body>
+		
+		<div class="container">
+	    	<div class="page-header">
+                <h1>Assistente de leitura dinâmica</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>O assistente de leitura dinâmica serve para você que tem que ler muitos textos longos em um curto prazo, estudos mostram que a leitura dinâmica consegue captar em média 80% de todo o conteudo do texto.</h4>
+                    <form>
+                        <div class="form-group">
+                            <label>Insira o seu texto aqui</label>
+                            <textarea class="form-control" style="max-width: 100%; " id="text-input"></textarea>
+                        </div>
+                    </form>
+                    
+                    <button class="btn btn-primary" onclick="textDivider()"> submeter </button>
+                </div>
+                <div>
+                    <h1 id="text-output" class="text-center">teste1</h1>
+                </div>
+            </div>
+		</div>
+        <script src="script.js"></script>
+	</body>
+</html>
