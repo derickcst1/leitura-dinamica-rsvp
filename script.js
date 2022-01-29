@@ -13,7 +13,7 @@ const textDivider = () =>{
      console.log(arrayWithoutNull);
       let x = 0;
       textWriter(arrayWithoutNull,x);
-      
+  
 }
 
 const textWriter =(arrayWithoutNull,x) =>{
@@ -23,10 +23,10 @@ const textWriter =(arrayWithoutNull,x) =>{
         setTimeout(() => {
             textOutput.textContent = arrayWithoutNull[x];
             x++;
-            if(x<arrayWithoutNull.length){
+            if(x<=arrayWithoutNull.length){
                 textWriter(arrayWithoutNull, x);
             }
-        }, 500);
+        }, 200);
         
 
 
