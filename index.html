@@ -20,26 +20,42 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4>O assistente de leitura dinâmica serve para você que tem que ler muitos textos longos em um curto prazo, estudos mostram que a leitura dinâmica consegue captar em média 80% de todo o conteudo do texto.</h4>
-                    <form>
-                        <div class="form-group">
-                            <label>Insira o seu texto aqui</label>
-                            <textarea class="form-control" style="max-width: 100%; " id="text-input"></textarea>
-                        </div>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-sm-11">
+                    <label for="customRange1" class="form-label" >Tempo de exposição de cada palavra em milissegundos</label>
+                    <input type="range" class="form-range" id="customRange1" min="0" max="300" step="1" value="0" oninput="display.value=value" onchange="display.value=value">
+                </div>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" id="display" value="0" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <form>                                            
+                        <label for="text-input">Insira o seu texto aqui</label>
+                        <textarea class="form-control" style="max-width: 100%; min-width: 100%; " id="text-input"></textarea>
                     </form>
-                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
                     <button class="btn btn-primary" onclick="textDivider()"> submeter </button>
                 </div>
-               
             </div>
+
+            
+                
+               
+            
             <div style="height: 45vh;"></div>
             <div class="row align-items-center">
                 <h1 id="text-output" class="text-center">Seu texto aparecerá aqui</h1>
             </div>
             <div style="height:55vh"></div>
-            <div class="row">
-             <input class="col-sm-12" id="leitor" type="text" readonly placeholder="aaaaaaaaaaaa"/>
-            </div>
-            <div style="height: 25vh;"></div>
+
+
 		</div>
         <script src="script.js"></script>
 	</body>

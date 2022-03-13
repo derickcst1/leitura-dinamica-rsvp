@@ -18,7 +18,9 @@ const textDivider = () =>{
 
 const textWriter =(arrayWithoutNull,x) =>{
 
+    let textSpeed = document.getElementById("display").value;
     let textOutput = document.getElementById("text-output");
+
     
         setTimeout(() => {
             textOutput.textContent = arrayWithoutNull[x];
@@ -26,9 +28,9 @@ const textWriter =(arrayWithoutNull,x) =>{
             if(x<=arrayWithoutNull.length){
                 textWriter(arrayWithoutNull, x);
             }
-        }, 200);
+        }, textSpeed);
         
-
+        return;
 
 }
  
